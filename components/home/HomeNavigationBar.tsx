@@ -11,7 +11,7 @@ const HomeNavigationBar: React.FC<HomeNavigationBarType> = ({ hideOptions }) => 
   return (
     <nav className='absolute w-full flex p-5 items-center text-white mx-auto z-[200] '>
       <div className='w-24 md:w-40'>
-        <img className='' src='/logo.svg' />
+        <img className='' src='/logo.svg' alt='logo' />
       </div>
       {!hideOptions && (
         <div className='flex flex-grow space-x-2 md:space-x-5 justify-end'>

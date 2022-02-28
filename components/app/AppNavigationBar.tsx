@@ -1,5 +1,5 @@
-import { hoveredShowIdState } from '../../atoms/selectState'
 import Image from 'next/image'
+import { hoveredShowIdState } from '../../atoms/selectState'
 import { useEffect, useState } from 'react'
 import { useRecoilValue } from 'recoil'
 import {
@@ -61,7 +61,13 @@ const AppNavigationBar: React.FC = () => {
               <BellIcon className='h-4 w-4 md:h-5 md:w-5' />
             </li>
             <li className='flex hover:text-gray-300 cursor-pointer items-center'>
-              <Image className='rounded-sm' src='/user.png' width={30} height={30} />
+              <Image
+                className='rounded-sm'
+                src='/user.png'
+                alt='user'
+                width={30}
+                height={30}
+              />
               <ChevronDownIcon className='h-4 w-4 sm:h-5 sm:w-5' />
             </li>
           </ul>

@@ -26,7 +26,7 @@ const HomeSecondarySection: React.FC<HomeSecondarySectionType> = ({
   const content = (
     <Fragment>
       <div className='w-[50%] relative'>
-        <img className='object-contain relative z-50' src={imgSrc} />
+        <img className='object-contain relative z-50' alt='image' src={imgSrc} />
         {video && (
           <div
             style={{ top: `${top}%`, left: `${left}% `, width: `${width}%` }}

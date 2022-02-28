@@ -57,7 +57,7 @@ const HomeLogIn: React.FC = () => {
         New to Netflix? <span className='text-white'>Sign up now.</span>
       </div>
       <p className='text-[grey] text-xs lg:text-sm mt-4'>
-        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        This page is protected by Google reCAPTCHA to ensure you&apos;re not a bot.
       </p>
     </div>
   )

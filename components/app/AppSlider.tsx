@@ -1,11 +1,11 @@
 import AppSeriesCard from './AppSeriesCard'
-import { availableShowsState } from '../../atoms/showsState'
 import useHover from '../../hooks/useHover'
-import { useWindowSize } from '../../hooks/useWindowSize'
+import { availableShowsState } from '../../atoms/showsState'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { useRecoilValue } from 'recoil'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { useRecoilValue } from 'recoil'
+import { useWindowSize } from '../../hooks/useWindowSize'
 
 interface ShowsCategoryType {
   title: string
@@ -45,7 +45,7 @@ const AppSlider: React.FC<ShowsCategoryType> = ({ title, id }) => {
       setCardSize((hoverRef.current.clientWidth / 6.2) | 0)
       setSlidesPerView(6)
     }
-  }, [width])
+  }, [width, hoverRef])
 
   useEffect(() => {
     //@ts-ignore
@@ -54,7 +54,7 @@ const AppSlider: React.FC<ShowsCategoryType> = ({ title, id }) => {
     return () => {
       setSwiper(null)
     }
-  }, [])
+  }, [id])
 
   return (
     <div ref={hoverRef} className='mb-2 relative'>

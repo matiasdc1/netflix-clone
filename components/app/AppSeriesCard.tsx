@@ -133,7 +133,7 @@ const AppSeriesCard: React.FC<ShowCardType> = ({ show, size }) => {
         height: (size * 192) / 341,
       }}
     >
-      <img className='h-full' src={`/thumbs/${show.src}`} />
+      <img className='h-full' src={`/thumbs/${show.src}`} alt={`/thumbs/${show.src}`} />
     </div>
   )
 }
