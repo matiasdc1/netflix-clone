@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .button-nav {
+    height: 1rem;
+    width: 1rem;
+
+    @media (min-width: 768px) {
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+  }
+}
